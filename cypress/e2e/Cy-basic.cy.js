@@ -231,7 +231,5 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.wrap($checkbox).uncheck()
         cy.wrap($checkbox).should('not.be.checked')
       })
-  })
-
-  
+  }) 
 })
