@@ -222,7 +222,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
   })
 
   // CT11:
-  it.only('Verifica os checkbox', function(){
+  it('Verifica os checkbox', function(){
     cy.get('[type="checkbox"]')
       .should('have.length', 2)
       .each(function($checkbox){
@@ -231,5 +231,5 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.wrap($checkbox).uncheck()
         cy.wrap($checkbox).should('not.be.checked')
       })
-  }) 
+  })
 })

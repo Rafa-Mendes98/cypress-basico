@@ -1,7 +1,7 @@
 {
   "name": "cypress-basico",
   "version": "1.0.0",
-  "description": "Repositório do curso básico de Cypress da Escola Talking About Testing",
+  "description": "Repositório do curso Cypress básico",
   "main": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,10 +17,11 @@
     "Cypress Básico",
     "Escola TAT"
   ],
-  "author": "Seu Nome <seu-email@example.com> (https://seu-website.com/)",
+  "author": "Rafael <rafa.kertischka1998@gmail.com> (http://www.linkedin.com/in/rafael-mendes-tests-analyst)",
   "license": "MIT",
   "homepage": "https://github.com/Rafa-Mendes98/cypress-basico#readme",
   "devDependencies": {
-    "cypress": "^13.14.1"
+    "cypress": "^13.14.1",
+    "cypress-file-upload": "^5.0.8"
   }
 }
