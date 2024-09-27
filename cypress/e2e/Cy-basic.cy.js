@@ -263,4 +263,15 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         expect($input[0].files[0].name).to.equal('example.json');
       });
   })
+
+  // CT15:
+  it.only('Verifica políticas na outra aba sem clicar no link', function(){
+    cy.get('a[href="privacy.html"]').should('have.attr', 'target', '_blank');
+  })
+
+  // CT16:
+  it.only('Verifica políticas na outra aba clicando no link', function(){
+    cy.get('a[href="privacy.html"]').invoke('removeAttr', 'target').click();
+    cy.contains('Talking About Testing').should('be.visible');
+  })
 })
